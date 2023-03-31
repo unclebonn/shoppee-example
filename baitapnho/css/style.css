@@ -1,0 +1,1057 @@
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: Arial;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.thanhngang{
+    background-color: #e45d15;
+    height: 30px;
+    width: 100%;
+}
+.thanhngang .top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5px;
+}
+.thanhngang .top p{
+    margin: 0;
+    color: white;
+}
+.thanhngang .top a{ 
+    font-size: 18px;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0;
+}
+.thanhngang .top a:hover{
+    border-bottom: 1px solid white;
+}
+.phandautien .container .Logo{
+    display: flex;
+    justify-content: space-between;
+}
+.phandautien .container .Logo .toggle i{
+    font-size: 30px;
+    margin-top: 43px;
+    display: none;
+}
+.phandautien .Logo {
+    padding-top: 5px;
+}
+.phandautien .Logo .sdt{
+    padding-top: 45px;
+}
+.phandautien .Logo .sdt i{
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 20px;
+    width: 21px;
+    padding-left: 4px;
+    padding-top: 3px;
+}
+.phandautien .Logo .timkiem .hold{
+    margin-top: 40px;
+}
+.phandautien .Logo .timkiem input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    font-size: 17px;
+    margin-right: 0;
+    top: 50px;
+}
+.phandautien .Logo .sdt p{
+    margin: 0;
+}
+.phandautien .Logo .sdt .bao{
+    margin-left: 40px;
+    margin-top: -31px;
+}
+.phandautien .Logo .sdt .bao .bao1 a{
+    text-decoration: none;
+    color: #e45d15;
+    font-weight: bold;
+}
+.phandautien .container .lietke > ul{
+    list-style: none;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.phandautien .container .lietke > ul > li{
+    padding: 10px 33px;
+}
+.phandautien .container .lietke > ul > li > a{
+    text-decoration: none;   
+    font-size: 20px;
+}
+.phandautien .container .lietke > ul > li:hover > a{
+    color: #e45d15;
+    border-bottom: 2px solid #e45d15;
+    padding-bottom: 10px;
+}
+.phandautien .container .lietke .lietke1{
+    position: relative;
+}
+.phandautien .container .lietke .lietke1 > ul{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 1170px;
+    left: -290px;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    border: 1px solid #ddd;
+    margin-top: 11px;
+}
+.phandautien .container .lietke .lietke1:hover  ul{
+    display: block;
+}
+.phandautien .container .lietke .lietke1 > ul > li{
+    padding: 0;
+    padding: 20px 25px;
+}
+.phandautien .container .lietke .lietke1 .lietke2{
+    padding-bottom: 0;
+    display: block;
+    width: 100%;
+}
+.phandautien .container .lietke .lietke1 .lietke2 a{
+    color: #e45d15;
+}
+.phandautien .container .lietke .lietke1 .lietke3{
+    width: 25%;
+    padding: 20px 25px;
+}
+.phandautien .container .lietke .lietke1 .lietke3 > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}   
+.phandautien .container .lietke .lietke1 .lietke3 a:hover{
+    color: #e45d15;
+}
+.phandautien .container .lietke .lietke1 .bao{
+    width: 100%;
+    display: flex;
+}
+.phandautien .container .lietke .lietke1 > ul >li >a{
+    text-decoration: none;
+}
+.phandautien .container .lietke .lietke1 ul li ul{
+    list-style: none;
+    padding: 0;
+    padding-top: 15px;
+}
+.phandautien .container .lietke .lietke1 ul li ul li{
+    padding: 0;
+    padding: 5px 0px;
+}
+.phandautien .container .lietke .lietke1 ul li ul li a{
+    text-decoration: none;
+}
+.phandautien .container .lietke .lietke1 .lietke3 ul li:hover a{
+    color: #e45d15;
+}
+.phanthuhai{
+    background-color: #f7f8f9;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 60px 0px;
+}
+.phanthuhai .danhmucsanpham{
+    border: 1px solid #c2c2c2;
+    width: 250px;
+}
+.phanthuhai .all{
+    display: flex;
+    width: 100%;
+}
+.phanthuhai .baohet{
+    margin-right: 20px;
+    width: 260px;
+}
+.phanthuhai .danhmucsanpham h2{
+    background-color: #e45d15;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    margin: 0;
+}
+.phanthuhai .danhmucsanpham > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.phanthuhai .danhmucsanpham > ul > li{
+    background-color: white;
+    padding: 13px 25px;
+    position: relative;
+    border: 1px dashed #ebebeb;
+}
+.phanthuhai .danhmucsanpham > ul > li:hover ul{
+    display: block;
+}
+.phanthuhai .danhmucsanpham > ul > li:hover > a{
+    color: #e45d15;
+}
+.phanthuhai .danhmucsanpham > ul > li:hover > i{
+    color: #e45d15;
+}
+.phanthuhai .danhmucsanpham ul i{
+    position: absolute;
+    left: 218px;
+}
+.phanthuhai .danhmucsanpham > ul > li > a,.phanthuhai .danhmucsanpham ul li ul li a{
+    text-decoration: none;
+}
+.phanthuhai .danhmucsanpham ul li ul{
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    left: 100%;
+    top: 0px;
+    border: 1px solid#ebebeb;
+    display: none;
+}   
+.phanthuhai .danhmucsanpham ul li ul li{
+    background-color: white;
+    padding:15px 25px ;
+    position: relative;
+}
+.phanthuhai .danhmucsanpham ul li ul li:first-child{
+    border-bottom: 1px dashed #ebebeb;
+}
+.phanthuhai .danhmucsanpham ul li ul li .khongbiet {
+    display: none;
+    position: absolute;
+}
+.phanthuhai .danhmucsanpham ul li .khongbietluon li:hover > a{
+    color: #e45d15;
+}
+.phanthuhai .danhmucsanpham ul li .khongbietluon li:hover i{
+    color: #e45d15;
+}
+.phanthuhai .danhmucsanpham ul li ul li:hover .khongbiet{
+    display: block;
+}
+.phanthuhai .danhmucsanpham h3{
+    background-color: white;
+    padding: 11px 25px;
+    margin: 0;
+    border-top: none;
+}
+.phanthuhai .danhmucsanpham h3 a{
+    text-decoration: none;
+    color: #e45d15;
+}
+.phanthuhai .bosuutap{
+    width: calc( 100% - 280px);
+}
+.phanthuhai .bosuutap .baobathanh{
+    display: flex;
+    margin-right: 71px;
+    width: 100%;
+}
+.phanthuhai .bosuutap  .bathanh{
+    background-color: black;
+    width: calc(33.33333% - 50px);
+    padding: 16px 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+.phanthuhai .bosuutap  .bathanh .bao{
+    width: 242px;
+}
+.phanthuhai .bosuutap  .bathanh:last-child{
+    margin: 0;
+    width: calc( 33.33% - 40px);
+}
+.phanthuhai .bosuutap  .bathanh a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+.phanthuhai .bosuutap  .bathanh i{
+    color: yellow;
+    font-size: 13px;
+}
+.phanthuhai .bosuutap  .bathanh:hover{
+    background-color: #e45d15;
+}
+.phanthuhai .bosuutap .bang img{
+    margin-top: 10px;
+    width: 100%;
+}
+.phanthuba .title{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.phanthuba .title h2{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.phanthuba .title h2 a{
+    text-decoration: none;
+    color: grey;
+}
+.phanthuba .title h2 a:hover{
+    color: #e45d15;
+}
+.phanthuba .title .xemthem h3 a{
+    text-decoration: none;
+    color: #e45d15;
+    border: 2px solid #e45d15;
+    padding: 10px 30px;
+}
+.phanthuba .title .xemthem h3 a:hover{
+    background-color: #e45d15;
+    color: white;
+}
+.phanthuba .bonovuong{
+    display: flex;
+    justify-content: space-between;
+}
+.phanthuba .bonovuong .goigon{
+    width: 25%;
+    position: relative;
+}
+.phanthuba .bonovuong .goigon .gomgon{
+    text-align: center;
+}
+.phanthuba .bonovuong .goigon .gomgon .gom{
+    display: flex;
+    justify-content: center;
+}
+.phanthuba .bonovuong .goigon .gomgon .gom h4{
+    margin: 0;
+    margin-right: 4px;
+}
+.phanthuba .bonovuong .goigon .gomgon .gom > p{
+    margin: 0;
+    font-size:14px;
+    text-decoration: line-through;
+    color: #898989;
+}
+.phanthuba .bonovuong .goigon .gomgon p a{
+    text-decoration: none;
+    color: grey;
+}
+.phanthuba .bonovuong .goigon .gomgon p a:hover{
+    color: #e45d15;
+}
+.phanthuba .bonovuong .goigon .gomgon h4{
+    color: #e45d15;
+}
+.phanthuba .bonovuong .goigon .giamgia{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    width: 42px;
+    line-height: 39px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.phanthuba .bonovuong .goigon .giamgia span{
+    padding-left: 4px;
+}
+.phanthutu .title .title1 h2{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.phanthutu .title .title1 h2 a{
+    text-decoration: none;
+    color: grey;
+}
+.phanthutu .title h2 a:hover{
+    color: #e45d15;
+}
+.phanthutu .title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.phanthutu .title .namnu{
+    display: flex;
+    margin-top: 10px;
+}
+.phanthutu .title .namnu .nam h3{
+    margin: 0;
+}
+.phanthutu .title .namnu .nam h3 a{
+    text-decoration: none;
+    color: #e45d15;
+    border: 2px solid #e45d15;
+    padding: 7px 35px;
+}
+.phanthutu .title .namnu .nam h3 a:hover{
+    color: white;
+    background-color: #e45d15;
+}
+.phanthutu .title .namnu .nu{
+    margin-left: 10px;
+}
+.phanthutu .title .namnu .nu h3{
+    margin: 0;
+}
+.phanthutu .title .namnu .nu h3 a{
+    text-decoration: none;
+    color: #e45d15;
+    border: 2px solid #e45d15;
+    padding: 7px 35px;
+}
+.phanthutu .title .namnu .nu h3 a:hover{
+    color: white;
+    background-color: #e45d15;
+}
+.phanthutu .hinhanh{
+    margin: 15px 0px;
+}
+.phanthutu .bonovuong{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 20px;
+}
+.phanthutu .bonovuong .goigon{
+    width: 25%;
+    position: relative;
+}
+.phanthutu .bonovuong .goigon:last-child{
+    margin-right: -12px;
+}
+.phanthutu .bonovuong .goigon .gomgon{
+    text-align: center;
+}
+.phanthutu .bonovuong .goigon .gomgon .gom{
+    display: flex;
+    justify-content: center;
+}
+.phanthutu .bonovuong .goigon .gomgon .gom h4{
+    margin: 0;
+    margin-right: 4px;
+}
+.phanthutu .bonovuong .goigon .gomgon .gom > p{
+    margin: 0;
+    font-size:14px;
+    text-decoration: line-through;
+    color: #898989;
+}
+.phanthutu .bonovuong .goigon .gomgon p a{
+    text-decoration: none;
+    color: grey;
+}
+.phanthutu .bonovuong .goigon .gomgon p a:hover{
+    color: #e45d15;
+}
+.phanthutu .bonovuong .goigon .gomgon h4{
+    color: #e45d15;
+}
+.phanthutu .bonovuong .goigon .giamgia{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    width: 42px;
+    line-height: 39px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.phanthutu .bonovuong .goigon .giamgia span{
+    padding-left: 4px;
+}
+.phanthunam .title{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px 30px 0px;
+}
+.phanthunam .title h2{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.phanthunam .title h2 a{
+    text-decoration: none;
+    color: grey;
+}
+.phanthunam .title h2 a:hover{
+    color: #e45d15;
+}
+.phanthunam .title .xemthem h3 a{
+    text-decoration: none;
+    color: #e45d15;
+    border: 2px solid #e45d15;
+    padding: 10px 30px;
+}
+.phanthunam .title .xemthem h3 a:hover{
+    background-color: #e45d15;
+    color: white;
+}
+.phanthunam .phanchinh {
+    display: flex;
+}
+.phanthunam .phanchinh .picture{
+    width: 30%;
+    margin-right: 20px;
+}
+.phanthunam .phanchinh .sauovuong{
+    width: 70%;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.phanthunam .phanchinh .sauovuong .baogom{
+    width: 50%;
+    height: 130px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.phanthunam .phanchinh .picture img{
+    height: 435px;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu{
+    padding-left: 10px;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu span a{
+    text-decoration: none;
+    color: black;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu span:hover a{
+    color: #e45d15;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu h4{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #e45d15;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu a{
+    color: #8e8e8e;
+    font-size: 15px;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu a:hover{
+    color: #e45d15;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu .tien{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu .tien h4{
+    margin: 0;
+    margin-right: 5px;
+}
+.phanthunam .phanchinh .sauovuong .baogom .chu .tien p{
+    margin: 0;
+    font-size: 15px;
+    text-decoration: line-through;
+    color: #898989;
+}
+.phanthusau .title{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px 30px 0px;
+}
+.phanthusau .title h2{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.phanthusau .title h2 a{
+    text-decoration: none;
+    color: grey;
+}
+.phanthusau .title h2 a:hover{
+    color: #e45d15;
+}
+.phanthusau .title .xemthem h3 a{
+    text-decoration: none;
+    color: #e45d15;
+    border: 2px solid #e45d15;
+    padding: 10px 30px;
+}
+.phanthusau .title .xemthem h3 a:hover{
+    background-color: #e45d15;
+    color: white;
+}
+.phanthusau .baphan{
+    display: flex;
+}
+.phanthusau .baphan .bao{
+    width: 33.333333%;
+    margin-right: 32px;
+}
+.phanthusau .baphan .bao h3{
+    font-size: 16px;
+}
+.phanthusau .baphan .bao p{
+    color: #555555;
+    line-height: 25px;
+    overflow: hidden;
+    font-size: 16px;
+}
+.ourpresent{
+    background-color: #f7f8f9;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.ourpresent .bao{
+    text-align: center;
+}
+.ourpresent .bao h2{
+    margin: 0;
+    padding-top: 50px;
+}
+.ourpresent .sauovuongnho{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ourpresent .sauovuongnho .motovuong {
+    position: relative;
+    width: 16.2%;
+}
+/* .ourpresent .sauovuongnho .motovuong > a{
+    position: absolute;
+} */
+.ourpresent .sauovuongnho .motovuong h4{
+    top: 63px;
+    left: 48px;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.ourpresent .sauovuongnho .motovuong:hover h4{
+    display: block;;
+}
+.ourpresent .sauovuongnho .motovuong h4 a{
+    text-decoration: none;
+    color: white;
+}
+.footer .hetroi{
+    margin-top: 50px;
+    display: flex;
+}
+/* .footer .hetroi .vechungtoi{
+    width: 33.333333%;
+} */
+.footer .hetroi .vechungtoi h3{ 
+    font-size: 22px; 
+}
+.footer .hetroi .vechungtoi p i{
+    color:#e45d15 ;
+}
+.footer .hetroi .vechungtoi p a{
+    color:#e45d15 ;
+}
+.footer .hetroi .nhankhuyenmai{
+    margin-left: 100px;
+}
+.footer .hetroi .nhankhuyenmai h3{
+    font-size: 22px;
+}
+.footer .hetroi .nhankhuyenmai input{
+    width: 91%;
+    padding: 13px 20px;
+    border: 1px solid #ebebeb;
+    outline: none;
+}
+.footer .hetroi .nhankhuyenmai button{
+    background-color: #e45d15 ;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0px ;
+    font-size: 18px;
+    border: none;
+    margin-top: 15px;
+}
+.footer .hetroi .hotro{
+    margin-left: 25px;
+}
+.footer .hetroi .hotro h3{
+    margin-bottom: 33px;
+}
+.footer .hetroi .hotro .logo{
+    margin-top: 32px;
+}
+.footer .hetroi .hotro .logo img{
+    margin-left: 10px;
+}
+.footer .hetroi .hotro .logo img:first-child{
+    margin: 0;
+}
+.footer .thanhdai{
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.footer .thanhdai .minhkhoi{
+    margin-left: 2px;
+}
+.footer .thanhdai .ten{
+    margin-left: 2px;
+}
+.footer .thanhdai p{
+    margin: 0;
+    color: #7f7f7f;
+    padding: 0;
+}
+.mobile img{
+    display: none;
+}
+.phandautien .container > input{
+    width: 93%;
+    padding: 10px ;
+    border: 1px solid #ebebeb;
+    display: none;
+}
+@media screen and (max-width:1200px){
+    .container{
+        width: 991px;
+        margin: auto;
+    }
+    .phandautien .container .lietke > ul > li >a{
+        font-size: 19px;
+    }
+    .phandautien .container .lietke > ul > li{
+        padding-bottom: 25px;
+    }
+    .phanthuhai .bosuutap .bathanh .bao{
+        width: 227px;
+        margin-left: -19px;
+    }
+    .phanthuhai .bosuutap .bathanh a {
+        font-size: 14px;
+    }
+    .phanthuhai .bosuutap .bang img {
+        height: 405px;
+    }
+    .phanthuba .bonovuong .goigon{
+        margin-right: 23px;
+    }
+    .phanthuba .bonovuong .goigon:last-child{
+        margin-right: 0;
+    }
+    .phanthuba .bonovuong .goigon img{
+        width: 100%;
+    }
+    .phanthutu .hinhanh img{
+        width: 100%;
+    }
+    .phanthutu .bonovuong .goigon{
+        width: 24%;
+        margin-right: 9px;
+    }
+    .phanthutu .bonovuong .goigon img{
+        width: 100%;
+    }
+    .phanthunam .phanchinh .sauovuong{
+        margin-left: 105px;
+    }
+    .phandautien .Logo .timkiem .hold i {
+        right: 153px;
+    }
+    .thanhngang .top p{
+        font-size: 16px;
+    }
+    .thanhngang .top span a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1024px){
+    .container{
+        width:767px;
+        margin: auto;
+    }
+    .toggle i{
+        display: block !important;
+    }
+    .phandautien .container .Logo .hinhanh img{
+        width: 220px;
+        margin-top: 15px;
+    }
+    .phandautien .container .Logo{
+        margin-bottom: 23px;
+    }
+    .phandautien .container .lietke{
+        display: none;
+    }
+    .phanthuhai .danhmucsanpham{
+        display: none;
+    }
+    .phanthuhai .bosuutap{
+        width: 100%;
+    }
+    .phanthuhai .bosuutap .bathanh .bao{
+        margin-left: -10px;
+    }
+    .phanthuba .bonovuong .goigon:last-child{
+        display: none;
+    }
+    .phanthuba .bonovuong .goigon{
+        width: 33.33%;
+    }
+    .phanthuba .bonovuong .goigon:nth-child(3){
+        margin-right: 0;
+    }
+    .phanthutu .title {
+        display: block;
+    }
+    .phanthutu .title .namnu{
+        justify-content: center;
+        padding: 15px;
+    }
+    .phanthutu .bonovuong .goigon {
+        width: calc(33.33% - 9px);
+    }
+    .phanthunam .phanchinh .sauovuong{
+        margin-left: 0;
+    }
+    .phanthunam .phanchinh .picture img{
+        width: 236px;
+        height: 265px;
+    }
+    .phanthusau .baphan .bao{
+        width: 50%;
+    }
+    .phanthusau .baphan .bao:last-child{
+        display: none;
+    }
+    .ourpresent .sauovuongnho .motovuong:last-child{
+        display: none;
+    }
+    .ourpresent .sauovuongnho .motovuong{
+        width: 20%;
+    }
+    .ourpresent .sauovuongnho .motovuong img{
+        height: 160px;
+    }
+    .footer .hetroi .vechungtoi{
+        width: 33.33%;
+    }
+    .footer .hetroi .nhankhuyenmai{
+        width: 33.33%;
+        margin-left: 10px;
+    }
+    .footer .hetroi .hotro{
+        width: 33.33%;
+    }
+    .phanthuhai .baohet{
+        margin-right: 0;
+    }
+    .phandautien .Logo .timkiem input{
+        width: 134px;
+    }
+    .phandautien .Logo .timkiem .hold{
+        margin-top:34px;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+        margin: auto;  
+    }
+    .phandautien .Logo .sdt {
+        display: none;
+    }
+    .phandautien .Logo .timkiem{
+        display: none;
+    }
+    .phanthuhai .bosuutap .bathanh:last-child {
+        display: none;
+    }
+    .phanthuhai .bosuutap .bathanh{
+        width: 50%;
+    }
+    .phanthuhai .bosuutap .bathanh:nth-child(2){
+        margin-right: 0;
+    }
+    .phanthuhai .baohet{
+        width: 0px;
+    }
+    .phanthuhai .bosuutap .bathanh .bao{
+        width: 100%;
+    }
+    .phanthuba .title .xemthem{
+        display: none;
+    }
+    .phanthuba .bonovuong .goigon:nth-child(3){
+        display: none;
+    }
+    .phanthuba .bonovuong .goigon{
+        width: 42%;
+    }
+    .phanthuba .title .title1{
+        margin-left: 25px;
+        margin-top: 19px;
+    }
+    .phanthuba .bonovuong{
+        margin: 0px 75px;
+    }
+    .phanthutu .title .title1{
+        margin-left: 25px;
+        margin-top: 19px;
+    }
+    .phanthutu .title .namnu {
+        display: none;
+    }
+    .phanthutu .bonovuong .goigon{
+        width: 42%;
+        margin-right: 45px;
+    }
+    .phanthutu .bonovuong{
+        padding-left: 75px;
+        margin: 0px 30px;
+    }
+    .phanthunam .title .title1{
+        margin-left: 25px;
+        margin-top: 19px;
+    }
+    .phanthunam .title .xemthem{
+        display: none;
+    }
+    .phanthunam .phanchinh{
+        display: block;
+    }
+    .phanthunam .phanchinh .sauovuong .baogom{
+        width: 100%;
+    }
+    .phanthunam .phanchinh .sauovuong{
+        padding-left:15px;
+    }
+    .phanthunam .phanchinh .picture{
+        margin-left: 220px;
+        margin-bottom: 20px;
+    }
+    .phanthunam .phanchinh .picture img{
+        width: 337px;
+        height: 350px;
+    }
+    .phanthusau .title .title1{
+        margin-left: 25px;
+        margin-top: 19px;
+    }
+    .phanthusau .title .xemthem{
+        display: none;
+    }
+    .phanthusau .baphan .bao:nth-child(2){
+        display: none;
+    }
+    .phanthusau .baphan .bao{
+        width: 100%;
+    }
+    .phanthusau .baphan .bao img{
+        width: 63%;
+        margin-left: 130px;
+    }
+    .phanthusau .baphan .bao h3{
+        padding-left: 15px;
+    }
+    .phanthusau .baphan .bao p{
+        padding-left: 15px;
+    }
+    .ourpresent .sauovuongnho .motovuong:nth-child(4),.motovuong:nth-child(5){
+        display: none;
+    }
+    .ourpresent .sauovuongnho .motovuong{
+        padding: 0px 30px;
+    }
+    .footer .hetroi .vechungtoi{
+        width: 100%;
+    }
+    .footer .hetroi .vechungtoi h3{
+        padding-left: 15px;
+    }
+    .footer .hetroi .vechungtoi p{
+        padding-left: 15px;
+    }
+    .footer .hetroi .nhankhuyenmai{
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer .hetroi .nhankhuyenmai h3{
+        padding-left: 15px;
+    }
+    .footer .hetroi .nhankhuyenmai p{
+        padding-left: 15px;
+    }
+    .footer .hetroi .nhankhuyenmai input{
+        margin-left: 14px;
+    }
+    .footer .hetroi .hotro{
+        width: 100%;
+        padding-bottom: 20px;
+        margin-left: 0;
+    }
+    .footer .hetroi .hotro h3{
+        padding-left: 15px;
+    }
+    .footer .hetroi .hotro p{
+        padding-left: 15px;
+    }
+    .footer .hetroi{
+        display:block;
+    }
+    .footer .hetroi .nhankhuyenmai button{
+        width: 96%;
+        margin-left: 15px;
+    }
+    .footer .hetroi .hotro .logo {
+        margin-left: 15px;
+    }
+    .mobile img{
+        display: block !important;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+    .phandautien .container .Logo .toggle i{
+        padding-left: 10px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .phandautien .container .Logo .hinhanh img{
+        width: 140px;
+    }
+    .phandautien .container > input{
+        display: block !important;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .phandautien .container .Logo {
+        margin-bottom: 0;
+    }
+    .thanhngang .top p{
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .thanhngang .top span a{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .phanthuhai .bosuutap {
+        margin: 0px 15px;
+    }
+    .phanthutu .bonovuong .goigon:last-child{
+        margin-right: 45px;
+    }
+    
+}
+
+
+
+
+
+
+

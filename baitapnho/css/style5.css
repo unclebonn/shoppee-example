@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.container {
+    width: 600px;
+    margin: auto;
+}
+.tongquat {
+    margin-top: 20px;
+}
+.container .logo {
+    width: 100%;
+    background-color: #BEBEBE;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+}
+.container .header {
+    width: 100%;
+    height: 300px;
+    background-color: #BEBEBE;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .bonovuong {
+    display: flex;
+    margin:20px 0px;
+    width: calc(100% + 20px);
+}
+.container .bonovuong .motovuong{
+    width: 25%;
+    height: 40px;
+    background-color:#BEBEBE ;
+    margin-right: 20px;
+}
+.container .bonovuong .motovuong:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    width: 100%;
+    display:flex
+}
+.main .hinh1{
+    width: 55%;
+    height: 300px;
+    background-color: #BEBEBE;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .hinh2{
+    width: 45%;
+    height: calc(300px - 20px);
+}
+.main .hinh2 .haiovuong1 {
+    width: 100%;
+    height: 40%;
+    background-color:#BEBEBE ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .hinh2 .haiovuong2 {
+    width: 100%;
+    height: 60%;
+    background-color:#BEBEBE;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background-color: #BEBEBE;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 150px;
+}

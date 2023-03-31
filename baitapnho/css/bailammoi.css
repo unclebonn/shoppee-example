@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+    font-family:Arial ;
+}
+.container{
+    width: calc(100% - 20px);
+    border: 10px solid #F1F1F1 ;
+}
+.tongquat .header {
+    background-color: white;
+    height: 200px;
+    width: 100%;
+}
+
+.tongquat .container .header .my{
+    text-align: center;
+    line-height: 70px;
+    background-color: white;
+    height: 80%;
+
+}
+.tongquat .container .header .my h3 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding-top: 20px;
+    
+}
+.tongquat .container .header .my p{
+    width: 100%;
+    margin: 0;
+    margin-top: -25px;
+}
+.tongquat .container .header .linki{
+    background-color: #333333;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tongquat .container .header .linki ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+.tongquat .container .header .linki ul li a {
+    color: white;
+    text-decoration: none;
+}
+.tongquat .container .header .linki ul li {
+    margin: 10px;
+}
+.thanbai{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.thanbai .phan1 {
+    width: 70%;
+}
+.thanbai .phan2 {
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.thanbai .phan1 .haibang {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.thanbai .phan1 .haibang h6 {
+    margin-top: -10px;
+}
+.thanbai .phan1 .haibang h5{
+    width: calc(100% - 30px);
+    height: 140px;
+    background-color: #AAAAAA;
+    padding: 15px;
+}
+.thanbai .phan2 .aboutme{
+    background-color: white;
+    padding: 10px;
+}
+.thanbai .phan2 .popular{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.thanbai .phan2 .follow{
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.thanbai .phan2 .popular h5 {
+    width:  calc(100% - 30px);
+    height: 50px;
+    background-color: #AAAAAA;
+    margin: 0;
+    padding: 15px;
+}
+.thanbai .phan2 .aboutme h5{
+    width: calc(100% - 30px);
+    height: 50px;
+    background-color: #AAAAAA;
+    padding: 15px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDDDDD;
+    height: 70px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}

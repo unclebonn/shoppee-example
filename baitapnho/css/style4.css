@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+.head p{
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    padding: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box .item{
+    width: calc(33.33% - 2px);
+    background-color: green;
+    margin: 0;
+    border: 1px solid white;
+    
+}
+.box .item p{
+    margin: 0;
+    text-align: center;
+    height: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: white; 
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+.footer p{
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-top: 33px;
+}

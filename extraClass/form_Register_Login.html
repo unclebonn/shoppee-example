@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            width: calc(100% - 40px);
+        }
+
+        form:nth-child(2) {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        label,
+        input {
+            display: block;
+            width: calc(100% - 4px);
+            margin: 10px;
+            margin-left: 0;
+            height: 25px;
+            padding: 0;
+            margin-right: 0;
+            outline-color: cornflowerblue;
+        }
+
+        button {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: black;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 8px;
+            background-color: cornflowerblue;
+            border-color: darkblue;
+        }
+
+        select {
+            display: block;
+            width: 100%;
+            height: 30px;
+            outline-color: cornflowerblue;
+        }
+
+        form:nth-child(3) {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .register_list {
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        .register_list table thead th {
+            padding: 10px;
+            width: 100px;
+
+        }
+
+        .register_list table tbody tr {
+            text-align: center;
+        }
+
+        .register_list table tbody td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        .login {
+            max-width: 300px;
+            width: 100%;
+            margin-right: 20px;
+        }
+
+        .remove {
+            color: red;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h2>Đăng nhập</h2>
+        <label>Nickname</label>
+        <input class="nicknamelogin" type="text" value="">
+        <label>Mật khẩu</label>
+        <input class="passlogin" type="password" value="">
+        <button class="loginbtn" type="button">Đăng nhập</button>
+    </div>
+    <form action="">
+        <div class="register">
+            <h2>Đăng ký</h2>
+            <label>Nickname</label>
+            <input type="text" autofocus class="nickname" value="">
+            <label>Họ và tên</label>
+            <input type="text" class="name" value="">
+            <label>Địa chỉ</label>
+            <input type="text" class="address" value="">
+            <label>Mật khẩu</label>
+            <input type="password" class="pass" value="">
+            <label>Nhập lại mật khẩu</label>
+            <input type="password" class="re_pass" value="">
+            <label>Giới tính</label>
+            <select name="" id="gender">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+            </select>
+            <button type="button" class="regis">Đăng ký</button>
+        </div>
+    </form>
+    <form action="">
+        <div class="register_list">
+            <h2>Danh sách đăng ký</h2>
+            <table border="1">
+                <thead>
+                    <th>Nickname</th>
+                    <th>Họ và tên</th>
+                    <th>Địa chỉ</th>
+                    <th>Giới tính</th>
+                </thead>
+                <tbody class="list">
+
+                </tbody>
+            </table>
+        </div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script>
+        var arr_list = [];
+
+        function list() {
+            if (arr_list.length > 0) {
+                $('.list').empty();
+                arr_list.forEach(function(element,index){
+                    $('.list').append('<tr><td>' + element.nickname + '</td><td>' + element.name + '</td><td>' + element.address + '</td><td>' + element.gender + '</td><td> <a class="remove" href="#" data-index="'+index+'">Xoa</a> </td></tr>');
+                });
+            }else{
+                $('.list').empty();
+            }
+
+        }
+
+        function register() {
+            $('.regis').on('click', function () {
+                var nickname = $('.nickname').val();
+                var name = $('.name').val();
+                var address = $('.address').val();
+                var pass = $('.pass').val();
+                var re_pass = $('.re_pass').val();
+                var gender = $('#gender').val();
+                //Kiem tra dieu kien
+                if (nickname == '') {
+                    alert('Vui lòng nhập nickname !');
+                } else if (name == '') {
+                    alert('Vui lòng nhập họ và tên !');
+                } else if (address == '') {
+                    alert('Vui lòng nhập địa chỉ !');
+                } else if (pass == '') {
+                    alert('Vui lòng nhập mật khẩu !');
+                } else if (re_pass == '') {
+                    alert('Vui lòng nhập lại mật khẩu !');
+                } else if (pass === re_pass) {
+                    alert('Đăng ký thành công !')
+
+                    //Nhap thong tin vao danh sach
+                    
+
+                    //Thay doi gia tri data-index
+                    // var getRemove = $('.list tr .remove');
+                    // var index = 1;
+                    // for(var i =0;i<3;i++)
+
+                    arr_list.push(
+                        {
+                            nickname: nickname,
+                            name: name,
+                            address: address,
+                            gender : gender,
+                            pass: pass
+                        }
+                    )
+                    list();
+
+                } else {
+                    alert('Nhập lại mật khẩu không khớp')
+                }
+
+
+            })
+        }
+        register();
+
+
+
+
+        function login() {
+
+            $('.loginbtn').on('click', function () {
+                var arraycheck = [];
+                var nicknamelogin = $('.nicknamelogin').val();
+                var passlogin = $('.passlogin').val();
+
+                arr_list.forEach(element => {
+                    if (nicknamelogin == '') {
+                        alert('Vui lòng nhập nickname !');
+                    } else if (passlogin == '') {
+                        alert('Vui lòng nhập mật khẩu !')
+
+                    } else {
+                        if (nicknamelogin == element.nickname && passlogin == element.pass) {
+                            arraycheck.push(1);
+                            // alert('Dang nhap thanh cong');
+                            // return false;
+                        } else {
+                            arraycheck.push(2);
+                            // alert('Dang nhap that bai');
+                        }
+                    }
+
+                });
+                if (arraycheck.includes(1) == true) {
+                    alert('success');
+                } else {
+                    alert('failed')
+                }
+
+            })
+
+        }
+        login();
+
+        function remove() {
+            $('.list').on('click','.remove',function(){
+                var index = $(this).attr('data-index');
+                arr_list.splice(index,1);
+                console.log(arr_list);
+                list();
+            });
+
+        }
+        remove();
+
+
+
+        //Lỗi vòng lập lập qua nhiều tài khoản báo sai
+        // nút xoá
+    </script>
+</body>
+
+</html>

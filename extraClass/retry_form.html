@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+        form input,select{
+            width: 100%;
+            display: block;
+            margin:10px 0px;
+            padding: 0;
+            height: 31px;
+        }
+        form input{
+            width: calc(100% - 4px);
+            height: 27px;
+
+        }
+        form label{
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>Đăng Ký</h2>
+        <label >Nickname</label>
+        <input type="text">
+        <label >Họ và tên</label>
+        <input type="text">
+        <label >Địa chỉ</label>
+        <input type="text">
+        <label >Mật khẩu</label>
+        <input type="password">
+        <label >Nhập lại mật khẩu</label>
+        <input type="password">
+        <label >Giới tính</label>
+        <select name="" id="">
+            <option value="1">Nam</option>
+            <option value="2">Nữ</option>
+        </select>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

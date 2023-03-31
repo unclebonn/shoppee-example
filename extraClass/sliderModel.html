@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .slider {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            height: 400px;
+            position: relative;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .slider img.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pagination .control {
+            margin: 0px 15px;
+            cursor: pointer;
+        }
+
+        .dots {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dots li {
+            width: 15px;
+            height: 15px;
+            background: #000000;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .dots li.active {
+            background: red;
+        }
+
+        .load_animation {
+            width: 5rem;
+            height: 5rem;
+            background-color: purple;
+            border-radius: 5rem;
+            position: relative;
+            transform: rotate(0deg);
+            animation: spinning 1s linear infinite;
+        }
+
+        .load_animation::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: white;
+            border-radius: 100%;
+            transform: translate(0.3rem);
+        }
+
+        @keyframes spinning {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            0% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #FFFFFF;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <div class="load_animation"></div>
+    </div>
+    <div class="slider">
+        <img src="https://mona.media/wp-content/uploads/2021/06/banner-giay.png" alt="slide" />
+        <img src="https://vietadv.net/wp-content/uploads/2021/05/Banner-la-gi.png" alt="slide" />
+        <img src="https://rubicmarketing.com/wp-content/uploads/2021/07/banner-quang-cao-facebook-3.jpg" alt="slide" />
+    </div>
+    <div class="pagination">
+        <div class="control prev">Prev</div>
+        <div class="control next">Next</div>
+    </div>
+    <ul class="dots"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            let count = 1;
+            $('.slider img:nth-child(1)').addClass('active');
+
+            $('.pagination .next').on('click', function () {
+                if (count >= $('.slider img').length) {
+                    count = 1;
+                    var total = $('.slider img').length;
+                    $('.dots').find('li:nth-child(' + total + ')').removeClass('active');
+                    $('.dots').find('li:nth-child(' + count + ')').addClass('active');
+
+                } else {
+                    count = count + 1;
+                    var prev = count - 1;
+                    $('.dots').find('li:nth-child(' + prev + ')').removeClass('active');
+                    $('.dots').find('li:nth-child(' + count + ')').addClass('active');
+
+                }
+                $('.slider img').removeClass('active');
+                $('.slider img:nth-child(' + count + ')').addClass('active');
+            });
+
+            $('.pagination .prev').on('click', function () {
+                if (count <= 1) {
+                    count = $('.slider img').length;
+                    $('.dots').find('li:nth-child(1)').removeClass('active');
+                    $('.dots').find('li:nth-child(' + count + ')').addClass('active');
+
+                } else {
+                    count -= 1;
+                    let prev = count + 1;
+                    $('.dots').find('li:nth-child(' + prev + ')').removeClass('active');
+                    $('.dots').find('li:nth-child(' + count + ')').addClass('active');
+
+                }
+                $('.slider img').removeClass('active');
+                $('.slider img:nth-child(' + count + ')').addClass('active');
+            });
+            //dots
+            $('.dots').empty();
+            for (var i = 1; i <= $('.slider img').length; i++) {
+                if (i == 1) {
+                    $('.dots').append('<li class="active" data-index="' + i + '"></li>');
+                } else {
+                    $('.dots').append('<li data-index="' + i + '"></li>');
+                }
+            }
+
+            $('.dots').on('click', 'li', function () {
+                let index = $(this).attr('data-index');
+                $('.dots').find('li').removeClass('active');
+                $(this).addClass('active');
+                $('.slider img').removeClass('active');
+                $('.slider img:nth-child(' + index + ')').addClass('active');
+                count = parseInt(index);
+
+                console.log('index', index);
+
+            });
+
+            setTimeout(function () {
+                $('.loading').fadeOut();
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

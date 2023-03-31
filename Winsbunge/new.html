@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web development" />
+    <meta name="keywords" content="Registration Form" />
+    <meta name="author" content="Le Ngoc An Thu" />
+    <link href="regform2_desktop.css" rel="stylesheet" type="text/css" />
+    <title>Web Development Modal Demo</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="menu">
+            <nav>
+                <h2 class="name">DREAMY<span>CAFE</span></h2>
+                <ul>
+                    <li><a href="MENU.html">HOME</a></li>
+                    <li><a href="ABOUT ME.html">MENU</a></li>
+                    <li><a href="MY CITY.html">ORDER</a></li>
+                    <li><a href="WHAT I LIKE.html">REGISTER</a></li>
+                    <li><a href="MY SCHEDULE.html">FEATURES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+            <fieldset>
+                <legend>User Information</legend>
+                <div class="textinput1">
+                    <label for="uname">Name</label>
+                    <input id="uname" type="text" name="uname" placeholder="Enter your fullname" />
+                </div>
+                <div class="textinput2">
+                    <label for="mail">Mail</label>
+                    <input id="mail" type="text" name="mail" placeholder="Enter your email" />
+                </div>
+                <div class="textinput3">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="text" name="phone" placeholder="Enter your phone mumber" />
+                </div>
+                <div class="radioinput">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input id="genm" type="radio" name="gender" value="M" />
+                        <label for="genm">Male</label>
+                        <input id="genf" type="radio" name="gender" value="F" />
+                        <label for="genf">Female</label>
+                        <input id="geno" type="radio" name="gender" value="O" />
+                        <label for="geno">Others</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Account Information</legend>
+                <div class="textinput">
+                    <label for="sid">Username</label>
+                    <input id="sid" type="text" name="sid" placeholder="Enter your usename" />
+                </div>
+                <div class="textinput">
+                    <label for="pwd1">Password</label>
+                    <input id="pwd1" type="password" name="pwd1" placeholder="Enter your password" />
+                </div>
+                <div class="textinput">
+                    <label for="pwd2">Retype Password</label>
+                    <input id="pwd2" type="password" name="pwd2" placeholder="Retype your password" />
+                </div>
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Coffee flavor</legend>
+                <div class="coffeeFlavor">
+                    <div class="labelName">
+                        <label for="sid">Choose your favorite coffee</label>
+                    </div>
+                    <div class="listOfCoffee">
+                        <div>
+                            <label for="fav">FAV1</label>
+                            <input id="fav" type="checkbox" name="fav1" value="favfsd1" />
+                        </div>
+                        <div>
+                            <label for="fav2">FAV2</label>
+                            <input id="fav2" type="checkbox" name="fav2" value="fav2" />
+                        </div>
+
+                        <div>
+                            <label for="fav3">FAV3</label>
+                            <input id="fav3" type="checkbox" name="fav3" value="fav3"/>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </fieldset>
+            <div class="promo">
+                <input type="checkbox" name="promotion" value="promotional" id="dot-1">
+
+                <label for="dot-4" class="dot-4">
+                    <span class="dot four"></span>
+                    <span class="taco">I am interested in receiving promotional material through email.</span>
+                </label>
+            </div>
+
+            <div class="button">
+                <div class="buttoninput">
+                    <input type="submit" value="Test Register" />
+                </div>
+                <div class="buttonreset">
+                    <input type="reset" value="Reset" />
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="validation.js"></script>
+
+</body>
+<footer>
+    <section class="footer bg-img">
+        <h2 style="display: none">COFFEE</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <p> Email: cafemongmo@email.com</p>
+                    <p> Phone: +0311224455</p>
+                    <p> Address: 158/68 Hoàng Hoa Thám, Ward 12, Bình Thạnh District, Ho Chi Minh City</p>
+                </div>
+                <div class="col-2 col-xs-12 ">
+                    <aside class="left-to-right scrolleffect">
+                        <iframe class="ggmap"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.036048509314!2d106.68569631450211!3d10.808550992299761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528dcd47f64e1%3A0x9d4db74ba27d9cc9!2zV2FyZCAxMiwgMTU4IEhvw6BuZyBIb2EgVGjDoW0sIFBoxrDhu51uZyA1LCBCw6xuaCBUaOG6oW5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1668787229836!5m2!1sen!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+</html>

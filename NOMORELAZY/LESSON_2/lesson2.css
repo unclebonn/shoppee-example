@@ -1,0 +1,1204 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    user-select: none;
+}
+
+:root {
+    --maincolor: #aa8453;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main_color {
+    color: #aa8453 !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100% !important;
+}
+
+.heading {
+    background-image: url(img/3.jpg);
+}
+
+.heading .header .container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.heading .header .logo a img {
+    width: 170px;
+}
+
+.heading .header .navbar .navbar__list {
+    display: flex;
+    padding: 10px;
+}
+
+.heading .header .navbar .navbar__list .navbar__list--li {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.heading .header .navbar .navbar__list .navbar__list--li:hover .listOfHomeMenu {
+    display: block;
+}
+
+.heading .header .navbar .navbar__list .navbar__list--li .listOfHomeMenu {
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    width: 210px;
+    top: 28px;
+    display: none;
+    line-height: 8px;
+}
+
+.heading .header .navbar .navbar__list .navbar__list--li .listOfHomeMenu>li a {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.heading .header .navbar .navbar__list .navbar__list--li .listOfHomeMenu>li:hover a {
+    margin-left: 10px;
+    transition: 1s ease-in-out;
+
+}
+
+.heading .header .navbar .navbar__list .navbar__list--li .listOfHomeMenu li {
+    padding: 15px 50px 15px 30px;
+}
+
+
+
+.heading .header .navbar .navbar__list .navbar__list--li:first-child .listOfHomeMenu li:first-child a {
+    color: var(--maincolor);
+}
+
+.heading .header .navbar .navbar__list>li a span {
+    margin-right: 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.heading .header .navbar .navbar__list li a span i {
+    font-size: 10px;
+    margin-left: 7px;
+}
+
+.heading .heading__content {
+    padding-bottom: 130px;
+}
+
+.heading .heading__content .heading__content--details {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+.heading .heading__content .heading__content--details .phoneNumber {
+    display: flex;
+    transform: rotate(-90deg);
+    color: rgb(224, 212, 212);
+    align-items: center;
+}
+
+.heading .heading__content .heading__content--details .phoneNumber i {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 24px;
+    width: 14px;
+    padding: 11px;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-right: 18px;
+    margin-right: 20px;
+    transform: rotate(39deg);
+    cursor: pointer;
+}
+
+.heading .heading__content .heading__content--details .phoneNumber p {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.heading .heading__content .heading__content--details .phoneNumber p span {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: lighter;
+    display:inline-block;
+    width: 153px;
+}
+
+/* .heading .heading__content .heading__content--details .in4 {
+    margin-right: 160px;
+} */
+
+.heading .heading__content .heading__content--details .in4 .listOfStar {
+    color: rgb(255, 194, 80);
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.heading .heading__content .heading__content--details .in4 .listOfStar i {
+    margin-left: 7px;
+}
+
+.heading .heading__content .heading__content--details .in4 .in4__title p:first-child {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 6px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading .heading__content .heading__content--details .in4 .in4__title p:last-child {
+    font-size: 65px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Barlow Condensed';
+    font-weight: 100;
+}
+
+.heading .heading__content .heading__content--details .in4__btn {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.heading .heading__content .heading__content--details .in4__btn span {
+    font-family: 'Barlow Condensed';
+    text-transform: uppercase;
+    border: 2px solid rgb(133 83 19 / 91%);
+    padding: 13px 25px;
+    color: rgb(224 212 212);
+}
+
+.heading .heading__content .heading__content--details .slider {
+    margin: auto 0;
+}
+
+.heading .heading__content .heading__content--details .slider li {
+    font-size: 35px;
+    color: rgb(224, 212, 212);
+    margin-top: -19px;
+}
+
+.bookForm .bookForm__container {
+
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.bookForm .bookForm__container .coverup {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.bookForm .bookForm__container .listOfCalender {
+    position: relative;
+}
+
+.bookForm .bookForm__container .listOfCalender input,
+.bookForm .bookForm__container .listOfCalender span {
+    padding: 23px 15px;
+    outline: none;
+    border: none;
+    border-right: 1px solid grey;
+    font-size: 15px;
+}
+
+.bookForm .bookForm__container .listOfCalender .btn {
+    padding: 24px 65px;
+    color: white;
+    background-color: var(--maincolor);
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.bookForm .bookForm__container .listOfCalender:hover .btn {
+    background-color: black;
+    transition: .8s;
+}
+
+.bookForm .bookForm__container .listOfCalender:nth-child(3) span,
+.bookForm .bookForm__container .listOfCalender:nth-child(4) span,
+.bookForm .bookForm__container .listOfCalender:nth-child(5) span {
+    background-color: white;
+    padding: 23px 85px 23px 10px;
+    display: inline-block;
+}
+
+.bookForm .bookForm__container .listOfCalender:nth-child(3) input,
+.bookForm .bookForm__container .listOfCalender:nth-child(4) input,
+.bookForm .bookForm__container .listOfCalender:nth-child(5) input {
+    padding: 23px 17px;
+    width: 91px;
+}
+
+.bookForm .bookForm__container .listOfCalender:nth-child(3) i,
+.bookForm .bookForm__container .listOfCalender:nth-child(4) i,
+.bookForm .bookForm__container .listOfCalender:nth-child(5) i {
+    font-size: 11px;
+    color: var(--maincolor);
+    position: absolute;
+    right: 17px;
+    top: 43%;
+}
+
+.bookForm .bookForm__container i {
+    position: absolute;
+    right: 17px;
+    top: 37%;
+}
+
+.mainBody .intro {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.mainBody .intro .intro__content .intro__content--listOfStar i {
+    color: rgb(255, 194, 80);
+    font-size: 13px;
+    margin-right: 7px;
+}
+
+.mainBody .intro .intro__content .intro__content--paragraph h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #6a5858;
+    padding: 10px 0px;
+
+}
+
+.mainBody .intro .intro__content .intro__content--paragraph span {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #222;
+}
+
+.mainBody .intro .intro__content .intro__content--paragraph p {
+    color: #666;
+    font-size: 16px;
+    font-family: 'Barlow Condensed';
+    padding: 20px 0px;
+    line-height: 26px;
+}
+
+.mainBody .intro .intro__content .intro__content--contact {
+    display: flex;
+    line-height: 23px;
+    padding-left: 5px;
+}
+
+.mainBody .intro .intro__content .intro__content--contact i {
+    transform: rotate(-35deg);
+    font-size: 30px;
+    padding-right: 21px;
+}
+
+.mainBody .intro .intro__content .intro__content--contact p {
+    font-size: 16px;
+    font-family: 'Barlow Condensed';
+    color: #666;
+    text-align: left;
+}
+
+.mainBody .intro .intro__content .intro__content--contact span {
+    color: var(--maincolor);
+    font-size: 20px;
+}
+
+.mainBody .intro .intro__content {
+    width: 50%;
+}
+
+.mainBody .intro .intro__picture {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mainBody .intro .intro__picture img {
+    width: 246px;
+}
+
+.mainBody .intro .intro__picture div:first-child {
+    padding-top: 80px;
+    padding-right: 25px;
+}
+
+.mainBody .roomServices {
+    background-color: #f8f5f0;
+    width: 100%;
+}
+
+.mainBody .roomServices .roomServices__title h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #6a5858;
+    padding: 10px 0px;
+}
+
+.mainBody .roomServices .roomServices__title span {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #222;
+    margin-bottom: 10px !important;
+}
+
+.mainBody .roomServices .roomServices__details--vertical ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roomServices--li {
+    margin-right: 35px;
+    position: relative;
+}
+
+.roomServices--img,
+.extraServices--img,
+.clientFeedback--img,
+.places--img,
+.news--img,
+.brands--img {
+    width: 100%;
+}
+
+.book--vertical {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    transform: rotate(-90deg);
+    border: 1px solid white;
+    padding: 5px 10px;
+    color: white;
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.price--vertical {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.special--vertical {
+    font-size: 29px;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-family: auto;
+}
+
+.mainBody .roomServices .roomServices__details--horizontal ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.mainBody .extraServices {
+    background-color: #222;
+    width: 100%;
+
+}
+
+.mainBody .extraServices .container {
+    display: flex;
+    padding: 100px 0px;
+}
+
+.mainBody .extraServices .extraServices__content--intro h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: white;
+    padding: 4px 0px;
+    background-color: var(--maincolor);
+    width: 140px;
+    text-align: center;
+
+}
+
+.mainBody .extraServices .extraServices__content--intro {
+    width: 32%;
+    margin-left: 10px;
+}
+
+.mainBody .extraServices .container .extraServices__content--details {
+    width: 68%;
+}
+
+.mainBody .extraServices .extraServices__content--intro span {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    font-size: 45px;
+    color: white;
+}
+
+.mainBody .extraServices .extraServices__content--intro>p {
+    color: #666;
+    font-size: 16px;
+    font-family: 'Barlow Condensed';
+    padding: 20px 0px;
+    line-height: 26px;
+    width: 80%;
+    text-align: left;
+}
+
+.mainBody .extraServices .extraServices__content--details>ul {
+    display: flex;
+}
+
+.mainBody .extraServices .extraServices__content--details>ul li {
+    margin-right: 25px;
+    width: 100%;
+}
+
+.mainBody .extraServices .extraServices__content--details ul li .details {
+    background-color: #fff9e9;
+    padding: 40px;
+    margin-top: -4px;
+}
+
+.mainBody .extraServices .extraServices__content--details ul li .details p:first-child {
+    padding: 10px 0px;
+    font-size: 26px;
+    font-weight: lighter;
+    font-family: 'Barlow Condensed';
+    color: #222;
+}
+
+.mainBody .extraServices .extraServices__content--details ul li .details span {
+    color: var(--maincolor);
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: 'Barlow Condensed';
+}
+
+.mainBody .extraServices .extraServices__content--details ul li .details p:nth-child(2) {
+    color: #666;
+    padding-bottom: 10px;
+}
+
+.mainBody .extraServices .extraServices__content--details ul li .details ul li {
+    padding: 5px 0px;
+    color: #666;
+    font-weight: lighter;
+    font-family: 'Barlow Condensed';
+}
+
+.mainBody .extraServices .extraServices__content--intro .extraServices__content--contact {
+    padding: 5px 0px;
+    color: #666;
+    font-weight: lighter;
+    font-family: 'Barlow Condensed';
+    display: flex;
+}
+
+.mainBody .extraServices .extraServices__content--intro .extraServices__content--contact i {
+    transform: rotate(-35deg);
+    font-size: 30px;
+    padding-right: 21px;
+    color: var(--maincolor);
+}
+
+.mainBody .extraServices .extraServices__content--intro .extraServices__content--contact p {
+    font-size: 16px;
+    font-family: 'Barlow Condensed';
+    color: #666;
+    text-align: left;
+}
+
+.mainBody .extraServices .extraServices__content--intro .extraServices__content--contact span {
+    color: var(--maincolor);
+    font-size: 20px;
+}
+
+.mainBody .extraServices .extraServices__content--details .btn {
+    margin-top: 20px;
+
+}
+
+.mainBody .extraServices .extraServices__content--details .btn ul li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.mainBody .extraServices .extraServices__content--details .btn ul li:first-child {
+    background-color: var(--maincolor);
+}
+
+.mainBody .video {
+    background-image: url(https://duruthemes.com/demo/html/cappa/demo1/img/slider/2.jpg);
+    text-align: center;
+    padding: 110px 0px;
+}
+
+.mainBody .video .video--listOfStar {
+    color: rgb(255, 194, 80);
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+.mainBody .video .video--title h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: white;
+    padding: 15px 0px;
+}
+
+.mainBody .video .video--title span {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    font-size: 50px;
+    color: white;
+}
+
+.playbtn {
+    font-size: 100px;
+    padding-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.mainBody .hotelFacilities .container {
+    padding: 100px 0px;
+}
+
+.mainBody .hotelFacilities .title h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #222;
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+
+.mainBody .hotelFacilities .title span {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-family: 'Barlow Condensed';
+
+}
+
+.mainBody .hotelFacilities .listOfFacilities ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.mainBody .hotelFacilities .listOfFacilities ul li {
+    border: 1px solid rgb(221, 219, 219);
+    width: calc(33.33% - 54px);
+    margin-right: 18px;
+    margin-top: 36px;
+    padding: 35px 20px;
+}
+
+.mainBody .hotelFacilities .listOfFacilities ul li i {
+    color: var(--maincolor);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.mainBody .hotelFacilities .listOfFacilities ul li h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Barlow Condensed';
+    padding: 15px 0px;
+    color: #666;
+}
+
+.mainBody .hotelFacilities .listOfFacilities ul li p {
+    color: #666;
+}
+
+.mainBody .clientFeedback {
+    background-image: url(https://duruthemes.com/demo/html/cappa/demo1/img/slider/2.jpg);
+    width: 100%;
+}
+
+.container--clientFeedBack {
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: 120px 0px;
+
+}
+
+.mainBody .clientFeedback .clientFeedback__title h5 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: white;
+    padding: 15px 0px;
+}
+
+.mainBody .clientFeedback .clientFeedback__title p {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    font-size: 36px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.mainBody .clientFeedback .clientFeedback__title .line {
+    border-top: 1px solid #666;
+    width: 10%;
+    padding: 10px 0px;
+}
+
+.mainBody .clientFeedback .clientFeedback__comment {
+    color: white;
+    font-size: 13px;
+    font-family: 'Barlow Condensed';
+    line-height: 25px;
+}
+
+.mainBody .clientFeedback .clientFeedback__infor {
+    display: flex;
+    padding-top: 25px;
+}
+
+.mainBody .clientFeedback .clientFeedback__infor .info .listOfStar {
+    color: rgb(255, 194, 80);
+    font-size: 13px;
+    margin-right: 7px;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.mainBody .clientFeedback .clientFeedback__infor .img__customer .clientFeedback--img {
+    width: 70px;
+
+}
+
+.mainBody .clientFeedback .btn ul {
+    display: flex;
+    justify-content: center;
+}
+
+.mainBody .clientFeedback .btn ul li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 8px;
+    border: 1px solid white;
+}
+
+.mainBody .placesHotel {
+    padding: 100px 0px;
+}
+
+.mainBody .placesHotel .places {
+    display: flex;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.mainBody .placesHotel .places .pic {
+    width: 50%;
+
+}
+
+.mainBody .placesHotel .places .pic img {
+    height: 100%;
+}
+
+.mainBody .placesHotel .places .details {
+    width: 50%;
+    background-color: #f8f5f0;
+    height: auto;
+}
+
+.mainBody .placesHotel .places .details .details_clear {
+    width: calc(100% - 100px);
+    padding: 50px;
+}
+
+.mainBody .placesHotel .places .details h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #666;
+    padding: 15px 0px;
+}
+
+.mainBody .placesHotel .places .details span {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    font-size: 36px;
+    color: #666;
+    padding-bottom: 10px;
+}
+
+.mainBody .placesHotel .places .details p {
+    padding: 0px 0px 20px 0px;
+    color: #666;
+}
+
+.mainBody .placesHotel .places .details a {
+    padding: 13px 20px;
+    color: white;
+    background-color: var(--maincolor);
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.mainBody .news {
+    background-color: #222;
+    padding: 100px 0px 150px 0px;
+}
+
+.mainBody .news .news__title h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: var(--maincolor);
+    padding: 15px 0px;
+}
+
+.mainBody .news .news__title p {
+    font-weight: lighter;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.mainBody .news .news__content {
+    width: 100%;
+}
+
+.mainBody .news .news__content ul {
+    display: flex;
+    position: relative;
+}
+
+.mainBody .news .news__content ul li {
+    position: relative;
+    width: 33.33%;
+    margin-right: 30px;
+}
+
+.mainBody .news .news__content ul i:first-child {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 11px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.mainBody .news .news__content ul i:last-child {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 11px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.mainBody .news .news__content ul i:first-child:hover {
+    font-size: 10px;
+    padding: 11.5px 15px;
+    transition: 0.5s all;
+    color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+}
+
+.mainBody .news .news__content ul i:last-child:hover {
+    font-size: 10px;
+    padding: 11.5px 15px;
+    transition: 0.5s all;
+    color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+}
+
+.mainBody .news .news__content ul li:hover .description {
+    bottom: 40px;
+    transition: .8s all;
+}
+
+.mainBody .news .news__content ul li .description:hover p {
+    color: var(--maincolor);
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    border: 1px solid white;
+    padding: 7px;
+    color: white;
+    line-height: 25px;
+    left: 15px;
+    top: 15px;
+    text-align: center;
+}
+
+.description {
+    position: absolute;
+    bottom: -50px;
+    color: #666;
+    background-color: white !important;
+    width: calc(85% - 30px);
+    padding: 15px;
+    left: 26.5px;
+}
+
+.description h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #666;
+
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.description p {
+    font-weight: lighter;
+    font-family: 'Font Awesome 6 Free';
+    font-size: 26px;
+}
+
+.mainBody .bookForm2 {
+    background-image: url(https://duruthemes.com/demo/html/cappa/demo1/img/slider/2.jpg);
+}
+
+.mainBody .bookForm2>.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.mainBody .bookForm2 .bookForm2__intro {
+    width: 50%;
+    margin-top: 110px;
+}
+
+.mainBody .bookForm2 .bookForm2__intro .coverup {
+    width: 74%;
+}
+
+.mainBody .bookForm2 .bookForm2__intro .listOfStar i {
+    color: rgb(255, 194, 80);
+    font-size: 13px;
+    margin-right: 7px;
+}
+
+.mainBody .bookForm2 .bookForm2__intro .content {
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+    display: inline-block;
+    padding: 25px 0px;
+}
+
+.mainBody .bookForm2__intro .phoneContact {
+    display: flex;
+    line-height: 23px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+}
+
+.mainBody .bookForm2__intro .phoneContact i {
+    transform: rotate(-35deg);
+    font-size: 30px;
+    padding-right: 21px;
+    color: white;
+}
+
+.mainBody .bookForm2__intro .phoneContact p {
+    font-size: 16px;
+    font-family: 'Barlow Condensed';
+    color: #fff3f3;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.mainBody .bookForm2__intro .phoneContact span {
+    color: #fff3f3;
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.mainBody .bookForm2__register {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.mainBody .bookForm2__register .bookForm2__register--title {
+    width: 93%;
+    background-color: #f8f5f0;
+
+}
+
+.mainBody .bookForm2__register .bookForm2__register--title .coverup {
+    padding: 75px 70px;
+}
+
+.mainBody .bookForm2__register .bookForm2__register--title h4 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #666;
+    padding: 15px 0px 5px 0px;
+}
+
+.mainBody .bookForm2__register .bookForm2__register--title p {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    font-size: 30px;
+    color: #222;
+    padding: 5px 0px;
+}
+
+.mainBody .bookForm2__register .row {
+    display: flex;
+}
+
+.mainBody .bookForm2__register .row .listOfCalender {
+    margin-right: 20px;
+}
+
+.bookForm2 .container .bookForm2__register .listOfCalender {
+    position: relative;
+    padding: 10px 0px;
+}
+
+.bookForm2 .container .bookForm2__register .listOfCalender input {
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+.bookForm2 .container .bookForm2__register .listOfCalender .btn {
+    color: white;
+    background-color: var(--maincolor);
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bookForm2 .container .bookForm2__register .listOfCalender:hover .btn {
+    background-color: black;
+    transition: .8s;
+}
+
+.bookForm2 .container .bookForm2__register .listOfCalender input {
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
+.bookForm2 .container .bookForm2__register .listOfCalender i {
+    position: absolute;
+    z-index: 1;
+    top: 36%;
+    right: 16px;
+}
+
+.mainBody .brands {
+    background-color: white;
+    margin-top: 30px;
+}
+
+.mainBody .brands ul {
+
+    display: flex;
+    width: 100%;
+}
+
+.mainBody .brands ul li {
+    width: 20%;
+}
+
+.footer {
+    background-color: #222;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.footer .container .column {
+    width: 33.33%;
+    margin-right: 30px;
+}
+
+.footer .container .column h3 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Gilda Display', serif;
+    font-weight: lighter;
+}
+
+.footer .container .column:first-child p {
+    color: #666;
+    padding: 30px 0px;
+    line-height: 25px;
+}
+
+.footer .container .column:first-child p:last-child {
+    color: #666;
+    background: #282828;
+    padding: 13px 35px;
+    width: 50%;
+}
+
+.footer .container .column:first-child p:last-child i {
+    margin-left: 5px;
+}
+
+.footer .container .column:nth-child(2) h3 {
+    padding-bottom: 30px;
+
+}
+
+.footer .container .column:nth-child(2) ul li {
+    color: #666;
+    padding: 5px 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer .container .column:nth-child(3) .line {
+    width: 70%;
+}
+
+.footer .container .column:nth-child(3) p {
+    padding: 15px 0px;
+    color: #666;
+}
+
+.footer .container .column:nth-child(3) .phoneContact p {
+    font-size: 25px;
+    color: white;
+    font-family: 'Gilda Display', serif;
+}
+
+.footer .container .column:nth-child(3) .phoneContact i {
+    font-size: 25px;
+    transform: rotate(-30deg);
+    margin-right: 10px;
+}
+
+.footer .container .column:nth-child(3) .icon {
+    color: white;
+    cursor: pointer;
+}
+
+.footer .container .column:nth-child(3) .icon i {
+    color: white;
+    cursor: pointer;
+    margin: 13px 16px 0px 0px;
+}
+
+.footer .copyRight {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: #666;
+}
+
+.footer .copyRight span {
+    color: white;
+}
+
+.footer .copyRight:hover span {
+    color: var(--maincolor);
+    transition: 1s all;
+    cursor: pointer;
+}
+.nav__menu{
+    padding-top: 10px;
+    display: none;
+}

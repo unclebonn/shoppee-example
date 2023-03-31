@@ -1,0 +1,312 @@
+.mau1 {
+    background-color: pink;
+}
+.mau2 {
+    background-color: rebeccapurple;
+}
+.mau3 {
+    background-color: saddlebrown;
+}
+.mau4 {
+    background-color: seagreen;
+}
+.mau5 {
+    background-color: slategrey;
+}
+.mau6{
+    background-color: springgreen;
+}
+.mau7 {
+    background-color: violet;
+}
+.mau8{
+    background-color: tomato;
+}
+.mau9 {
+    background-color: teal;
+}
+
+
+body {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.container {
+    width: 1170px;
+    height: 80px ;
+    margin: auto;
+    
+}
+.container .mautrang{
+    background-color:pink;
+    height: 80px;
+    width: 100%;
+    
+}
+.container .mautrang .logo {
+    background-color: blue;
+    width: 30%;
+    height: 80px; 
+    float: left;
+}
+.container .mautrang .thongke {
+    background-color: purple;
+    width: 70%;
+    height: 80px;
+    float: left;
+}
+.container .mautrang .thongke .solieu{
+    background-color: red;
+    width: 70%;
+    height: 80px; 
+    float: left;
+}
+.container .mautrang .thongke .timkiem {
+    background-color: salmon;
+    width: 30%;
+    height: 80px;
+    float: left;
+}
+ .mauxanh {
+    background-color: green;
+    width: 100%;
+    height: 30px ;
+}
+.thanhngang{
+    width: 100%;
+    height: 120px;
+    background-color: #F4F6FA;
+    margin-top: 30px;
+}
+.main1 {
+    margin: 10px 100px;
+}
+.main1 .phan1 {
+    width: 800px ;
+    height: 500px;
+    background-color: hotpink;
+}
+.main1 .phan1 .noidungchinh {
+    width: 60%;
+    background-color: indigo;
+    height: 500px;
+    float: left;
+}
+.main1 .phan1 .thanhdoc {
+    width: 40%;
+    background-color: khaki;
+    height: 500px;
+    float: left;
+}
+
+.main1 .phan1 .thanhdoc .muoithanh {
+    width: 100%;
+    height: 50px;
+}
+.main1 .phan2 {
+    margin-top: 10px ;
+}
+.main1 .phan2 .bacuc{
+    width:200px ;
+    height: 150px;
+    float: left;
+    margin-right: 100px ;
+}
+.main2 {
+    margin: 0px 100px ;
+    margin-top: 180px ;
+} 
+.main2 .namovuong{
+    width: 200px;
+    height: 100px;
+    clear: both;
+    margin-top: 30px ;
+}
+.main3 {
+    margin: 15px 100px ;
+}
+.main3 .noidungchinh1 {
+    background-color: black;
+    width: 300px;
+    height: 200px ;
+}
+.main3 .bacucnho {
+    margin-top: 15px ;
+}
+.main3 .bacucnho .nhoxiu {
+    width: 70px;
+    height: 70px ;
+    float: left;
+    margin-right: 50px ;
+}
+.main4 {
+    margin: 0px 100px;
+    margin-top: 100px ;
+}
+.main4 .bonovuong {
+    width: 200px;
+    height: 200px ;
+    clear: both;
+    margin-top: 30px ;
+}
+.main5 {
+    margin-top: 40px;
+    width: 450px ;  
+    margin-left: 100px ;  
+
+}
+.main5 .bono50 {
+    width: calc(50% - 20px );
+    height: 200px ;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px ;
+}
+
+.main6 {
+    margin-left: 100px ;
+    margin-top: 480px;
+}
+.main6 .bonovuong {
+    width: 500px;
+    height: 200px ;
+    clear: both;
+    margin-top: 20px ;
+}
+.main7{
+    margin-left: 100px;
+    width: 450px ;
+}
+.main7 .bono50{
+    width: calc(50% - 20px );
+    height: 200px ;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px ;
+}
+.main8 {
+    margin-left: 100px;
+    margin-top: 450px;
+}
+.main8 .bonovuong { 
+    width: 500px;
+    height: 200px ;
+    clear: both;
+    margin-top: 20px ;
+}
+.main9 {
+    margin-left: 100px;
+    margin-top: 130px ;
+    width: 500px;
+}
+.main9 .haiovuong {
+    width: calc(50% - 20px);
+    height: 200px ;
+    margin-top: 15px ;
+    float: left;
+    margin-right: 10px ;
+}
+.main10 {
+    margin-left:100px ;
+    margin-top: 400px ;
+}
+.main10 .bonovuong{
+    width: 500px;
+    height: 200px ;
+    clear: both;
+    margin-top: 20px ;
+}
+.main11 {
+    margin-left: 100px;
+    margin-top: 130px ;
+    width: 500px;
+}
+.main11 .haiovuong {
+    width: calc(50% - 20px);
+    height: 200px ;
+    margin-top: 15px ;
+    float: left;
+    margin-right: 10px ;
+}
+.main12 {
+    margin-left:100px ;
+    margin-top: 400px ;
+}
+.main12 .bonovuong{
+    width: 500px;
+    height: 200px ;
+    clear: both;
+    margin-top: 20px ;
+} 
+.main13 {
+    margin-top: 100px;
+    margin-left: 100px ;
+}
+.main13 .thoitiet {
+    background-color: coral;
+    width: 500px;
+    height: 200px;
+}
+.main13 .giavang{
+    background-color: darkgreen;
+    width: 500px;
+    height: 300px ;
+} 
+
+.phanbaoquat{
+    float: left;
+}
+.baoquatthanhdoc .nhungthanhdoc {
+    width: 200px;
+    height: 750px ;
+    background-color: chocolate;
+    float: left;
+    margin-top: 15px ;
+}
+.footer {
+    margin: 0px  100px ;
+    margin-top: 8400px;
+}
+.phanduoi1 {
+    width: 100% ;
+    height: 300px ;
+    background-color: darkorange;
+    clear: both;
+}
+.phanduoi1 .dulich{
+    width: 40%;
+    background-color: darksalmon;
+    height: 300px;
+    float: left;
+}
+.phanduoi1 .phapluat {
+    width: 60%;
+    background-color: deepskyblue;
+    height: 300px ;
+    float: left;
+} 
+.phanduoi1 .dulich .baphan {
+    width: 100%;
+    height: 100px ;
+}
+.phanduoi1 .phapluat .baphan1 {
+    width: 229.8px ;
+    height: 100% ;
+    float: left;
+}
+.thanhngang2 {
+    background-color:#F4F6FA ;
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+
+
+ 
+
+
+
+

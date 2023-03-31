@@ -1,0 +1,249 @@
+
+
+/* Style the form to a fixed width so the form looks the same
+	 even if the browser window is resize
+*/
+form {
+  width: 50em;
+}
+
+header {
+  background-color: #D394A9;
+  z-index: 99;
+  padding: 1rem;
+}
+
+body {
+  background-color: #F9E1E0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-top: 45px;
+  padding-right: 8%;
+  font-size: 20px;
+}
+
+.name {
+  color: aliceblue;
+  font-size: 40px;
+  letter-spacing: 6px;
+  padding-right: 10%;
+}
+
+.name:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+span {
+  background-color: #bc85a3;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  word-spacing: 2px;
+  padding: 5px 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 850;
+}
+
+nav ul li a:hover {
+  color: #243B5D;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+
+/* .textinput {
+  height: 45px;
+  margin: 20px;
+  display: block;
+  font-size: 16px;
+} */
+
+/* Style the labels and input by aligning all input fields 
+*/
+section {
+  margin: 0 250px;
+}
+
+label {
+
+  float: left;
+  text-align: right;
+  width: 10em;
+  margin-right: 1em;
+}
+
+input {
+  width: 50%;
+}
+
+/* Style text input to have spacing between input fields
+*/
+span.taco {
+  text-align: center;
+}
+
+/* Style radio button input to a single line
+	 note that declarations are inherited 
+*/
+.radioinput fieldset {
+  border: none;
+}
+
+.radioinput legend {
+  float: left;
+  text-align: right;
+  width: 9em;
+  /* Not 10em as it is inside a fieldset */
+  margin-right: 1em;
+}
+
+.radioinput input {
+  width: 2em;
+  /* reset inherited value from 10em to 2em */
+}
+
+.radioinput label {
+  float: none;
+  /* clears the inherited float left */
+  text-align: left;
+  /* reset inherited alignment to left */
+}
+
+/* Style  button input 
+	 note that declarations are inherited 
+*/
+
+.button{
+    text-align: left;
+}
+
+.button input {
+  width: 100px;
+  background-color: #a07f9e;
+  text-decoration-color: white;
+  margin-top: 8px;
+}
+
+form .buttoninput input {
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #D394A9;
+}
+
+form .buttonreset input {
+  height: 100%;
+  width: 20%;
+  display: inline-block;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #D394A9;
+}
+
+/*thiết kế hộp chứa submit và reset (design box for submit and reset button)*/
+form .buttoninput input:hover {
+  background-color: #243B5D;
+}
+
+form .buttonreset input:hover {
+  background-color: #243B5D;
+}
+
+.buttoninput {
+  padding-right: 7vh;
+}
+
+.buttonreset {
+  padding-right: 7vh;
+}
+
+.col-2 {
+  padding: 1em;
+}
+
+footer .row{
+    display: flex;
+}
+.col-6 {
+  /* width: 16.66%; */
+}
+
+footer {
+
+  color: var(--black);
+  display: flex;
+   text-align: center;
+
+}
+
+footer p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.ggmap {
+  width: 55vh;
+  height: 55vh;
+  border: 0;
+
+}
+
+
+/* đây là ghi chú thứ 1 :))))) */
+/* mốt đặt tên css nàm ơn gọi từ ngoài vào giùm con */
+/* ví dụ */
+section .promo #dot-1{
+    width: auto;
+}
+
+section .promo {
+    margin-top: 6px;
+    text-align: left;
+}
+section .promo .dot-4{
+    width: auto;
+    float: unset;
+    text-align: right;
+}
+
+.coffeeFlavor{
+  display: flex;
+}
+
+.coffeeFlavor .listOfCoffee input{
+  width: auto;
+}
+
+

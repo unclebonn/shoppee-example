@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1150px;
+    margin: auto;
+}
+.header{
+    background-color: #F7F3F0;
+}
+.header .container .header1 {
+    width: 100%;
+}
+.header .container .header1 h2 {
+    font-family: Arial;
+    margin: 0;   
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.header .container .header1 ul {
+    display: flex;
+    margin-top: 30px;
+    list-style: none;
+}
+.header .container .header1 ul li {
+    margin-right: 30px ;
+}
+.header .container .header1 ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9B9794;
+}
+.header .container .header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header  .header2 {
+    background-image: url(../images/anhkhoi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+    color:white;
+    font-family: Arial;
+    padding: 160px 0px;
+    margin-top: 20px;  
+}
+.header  .header2 h2 {
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.header  .header2 p{
+    margin: 0;
+    font-size: 15px;
+} 
+.main .container h1{
+    margin-top: 50px;
+}  
+.main .container .tongquat {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .container .tongquat .muoihai {
+    margin-top: 50px;
+    width: calc(25% - 15px);
+    margin-right: 15px;
+    height: auto;
+}
+.main .container .tongquat .muoihai img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 180px;
+}
+.main .container .tongquat .muoihai .baovuong{
+    margin-top: 10px;
+    display: flex;
+}
+.main .container .tongquat .muoihai .baovuong .moto{
+    background-color: #F7F3F0;
+    border-radius: 10px;
+    margin-right: 5px;
+   
+}
+.main .container .tongquat .muoihai .baovuong .moto a{
+    color: #D1BEB0;
+    text-decoration: none;
+    font-size: 12px;
+    display:block;
+    padding:7px
+}
+.main .container .tongquat .muoihai .tuade h2 a{
+    color: #333333;
+    text-decoration: none;
+}
+.main .container .tongquat .muoihai .cunghang {
+    padding: 10px 20px;
+ 
+}
+.main .trang {
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.main .trang .sauo {
+    background-color: white;
+    width: calc(40px - 2px);
+    height: 40px;
+    border: 1px solid #C9A285;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.main .trang .sauo p a {
+    text-decoration: none;
+    color: black;
+}
+.main .trang .sauo:first-child{
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+}
+.main .trang .sauo:last-child{
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.subscribe .container{
+    background-color:#F6F2EF ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe{
+    margin: 50px 0px;
+}
+.subscribe .container .bao {
+    padding: 20px 30px;
+}
+.subscribe .container .timkiem {
+    margin-right: 30px;
+}
+.subscribe .container .timkiem input {
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #EAEAEA;
+    outline: none;
+    height: 20px;
+}
+.subscribe .container .timkiem button{
+    padding: 10px;
+    margin-left: -10px;
+    background-color: #C59B7D;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+}
+.footer {
+    width: 100%;
+    background-color: #C9A285;
+    height: 350px;
+}
+.phancuoi{
+    text-align: center;
+    padding-top:35px;
+}
+.footer .container .phancuoi h1{
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer .container .phancuoi ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.footer .container .phancuoi ul li {
+    margin-right:20px ;
+}
+.footer .container .phancuoi ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+.footer .container .thanhngang {
+    border: 1px solid white;
+    margin-top: 80px;
+}
+.footer .container .sapxongroi {
+    color:white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container .sapxongroi p a {
+   
+    color: white;
+}
